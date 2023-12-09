@@ -1,0 +1,75 @@
+/* Apply styles to the body element */
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.title {
+  font-size: 24px; /* Adjust font size as needed */
+  /* Other styles for your title */
+}
+body {
+  font-family: Bookman Oldstyle,Bookman;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #FF6666, #FF8000); /* Background gradient */
+  color: #ffffff; /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Create a container for content */
+.container {
+  max-width: 800px;
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+/* Style headings */
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Abstract background shape */
+.abstract-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://t4.ftcdn.net/jpg/03/08/82/39/360_F_308823955_XTMT8TNKmOYnPEwmEmfnskgNqQv3hQE5.jpg/1920x1080') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(20px); /* Apply blur effect to the background */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+}
